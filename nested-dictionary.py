@@ -1,4 +1,4 @@
-import pprint
+from pprint import pprint
 
 # variable
 strings = ["data", "science"]
@@ -16,4 +16,4 @@ def nestedDictionaryFromStrings(strings: list) -> dict:
 
 # apply function to string list and print the resulting dictionary
 print(f"The nested dictionary is:")
-pprint.pprint(nestedDictionaryFromStrings(strings))
+pprint(nestedDictionaryFromStrings(strings))
