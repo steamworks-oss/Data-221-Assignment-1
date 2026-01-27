@@ -1,5 +1,8 @@
 import pprint
 
+# variable
+strings = ["data", "science"]
+
 # function that takes a list of strings and returns a nested dictionary of the strings paired with its length and parity
 def nestedDictionaryFromStrings(strings: list) -> dict:
     nestedDictionary = dict()
@@ -11,7 +14,6 @@ def nestedDictionaryFromStrings(strings: list) -> dict:
         }
     return nestedDictionary
 
-# prompt user for list of strings and apply function to the given input
-strings = input("Input strings seperated by a space:\n").split()
+# apply function to string list and print the resulting dictionary
 print(f"The nested dictionary is:")
 pprint.pprint(nestedDictionaryFromStrings(strings))
