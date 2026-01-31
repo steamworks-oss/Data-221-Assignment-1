@@ -1,5 +1,9 @@
 from math import pi
 
+# variables
+radiusOfCircle1 = 50
+radiusOfCircle2 = 100
+
 def circleAreaCoverage(radiusOfCircle1: int, radiusOfCircle2: int) -> float:
     # validate that both radii are positive integers
     if not isinstance(radiusOfCircle1, int) or not isinstance(radiusOfCircle2, int):
@@ -18,5 +22,5 @@ def circleAreaCoverage(radiusOfCircle1: int, radiusOfCircle2: int) -> float:
         return (areaOfCircle1 / areaOfCircle2) * 100
 
 # calculate the comparison of two circles using their radii to get a percentage and then printing it
-percentage = circleAreaCoverage(50, 100)
+percentage = circleAreaCoverage(radiusOfCircle1, radiusOfCircle2)
 print(f"The percentage of the larger circle's area that can be covered by the smaller circle is: {percentage}")
